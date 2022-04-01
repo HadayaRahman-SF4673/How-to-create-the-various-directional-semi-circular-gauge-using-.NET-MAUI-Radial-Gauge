@@ -1,0 +1,53 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="SemiCircularGauges.MainPage"
+             xmlns:gauge="clr-namespace:Syncfusion.Maui.Gauges;assembly=Syncfusion.Maui.Gauges"
+             BackgroundColor="{DynamicResource SecondaryColor}">
+
+    <ScrollView>
+    <StackLayout HorizontalOptions="Center" VerticalOptions="Center"> 
+
+        <gauge:SfRadialGauge>
+            <gauge:SfRadialGauge.Axes>
+                <gauge:RadialAxis CanScaleToFit="True" 
+                                  StartAngle="270" 
+                                  EndAngle="90"
+                                  Interval="10">
+                </gauge:RadialAxis>
+            </gauge:SfRadialGauge.Axes>
+        </gauge:SfRadialGauge>
+
+            <gauge:SfRadialGauge>
+                <gauge:SfRadialGauge.Axes>
+                    <gauge:RadialAxis CanScaleToFit="True" 
+                                  StartAngle="90" 
+                                  EndAngle="270"
+                                  Interval="10">
+                    </gauge:RadialAxis>
+                </gauge:SfRadialGauge.Axes>
+            </gauge:SfRadialGauge>
+
+            <gauge:SfRadialGauge>
+                <gauge:SfRadialGauge.Axes>
+                    <gauge:RadialAxis CanScaleToFit="True" 
+                                  StartAngle="180" 
+                                  EndAngle="0"
+                                  Interval="10">
+                    </gauge:RadialAxis>
+                </gauge:SfRadialGauge.Axes>
+            </gauge:SfRadialGauge>
+
+        <gauge:SfRadialGauge>
+            <gauge:SfRadialGauge.Axes>
+                <gauge:RadialAxis CanScaleToFit="True" 
+                                  StartAngle="0" 
+                                  EndAngle="180"
+                                  Interval="10">
+                </gauge:RadialAxis>
+            </gauge:SfRadialGauge.Axes>
+        </gauge:SfRadialGauge>
+
+    </StackLayout>
+    </ScrollView>
+</ContentPage>
