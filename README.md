@@ -1,11 +1,11 @@
-# How-to-create-the-various-directional-semi-circular-gauge-using-.NET-MAUI-Radial-Gauge
-This article describes how to create the various directional semi-circular gauge using [Syncfusion .NET MAUI Radial Gauge](https://www.syncfusion.com/maui-controls/maui-radial-gauge) control.
+# How-to-create-the-various-directional-semi-circular-gauge-using-the-.NET-MAUI-Radial-Gauge
+This article describes how to create the various directional semi-circular gauge using the [Syncfusion .NET MAUI Radial Gauge](https://www.syncfusion.com/maui-controls/maui-radial-gauge) control.
 
 You can create the semi-circular gauge by varying the [StartAngle](https://help.syncfusion.com/cr/maui/Syncfusion.Maui.Gauges.RadialAxis.html#Syncfusion_Maui_Gauges_RadialAxis_StartAngle) and [EndAngle](https://help.syncfusion.com/cr/maui/Syncfusion.Maui.Gauges.RadialAxis.html#Syncfusion_Maui_Gauges_RadialAxis_EndAngle) property of [RadialAxis](https://help.syncfusion.com/cr/maui/Syncfusion.Maui.Gauges.RadialAxis.html).
 
 Create the [SfRadialGauge](https://help.syncfusion.com/cr/maui/Syncfusion.Maui.Gauges.SfRadialGauge.html) control by referring to this getting started [link](https://help.syncfusion.com/maui/radialgauge/getting-started#creating-an-application-using-the-net-maui-radial-gauge) and add an axis into it.
 
-**East directional gauge:** Set the start angle property value is 270 and end angle property value is 90 to show east direction semi-circular gauge.
+**East directional gauge:** Set the start angle property value as 270 and the end angle property value as 90 to show the east direction semi-circular gauge.
 
 [XAML]
 ```
@@ -23,7 +23,7 @@ Create the [SfRadialGauge](https://help.syncfusion.com/cr/maui/Syncfusion.Maui.G
 
 ![](EastDirectionalOutput.png)
 
-**West directional gauge:** Set the start angle property value is 90 and end angle property value is 270, and set IsInversed property value is true to show the west directional semi-circular gauge.
+**West directional gauge:** Set the start angle property value as 90, end angle property value as 270, and IsInversed property value as true to show the west directional semi-circular gauge.
 
 [XAML]
 ```
@@ -40,8 +40,8 @@ Create the [SfRadialGauge](https://help.syncfusion.com/cr/maui/Syncfusion.Maui.G
 [Output]
 
 ![](WestDirectionalOutput.png)
- 
-**North directional gauge:** Set the start angle property value is 180 and end angle property value is 0 to show the north directional semi-circular gauge.
+
+**North directional gauge:** Set the start angle property value as 180 and the end angle property value as 0 to show the north directional semi-circular gauge.
 
 [XAML]
 ```
@@ -59,7 +59,7 @@ Create the [SfRadialGauge](https://help.syncfusion.com/cr/maui/Syncfusion.Maui.G
 
 ![](NorthDirectionalOutput.png)
 
-**South directional gauge:** Set the start angle property value is 0 and end angle property value is 180, and set IsInversed property value is true to show the south directional semi-circular gauge.
+**South directional gauge:** Set the start angle property value as 0, end angle property value as 180, and IsInversed property value as true to show the south directional semi-circular gauge.
 
 [XAML]
 ```
