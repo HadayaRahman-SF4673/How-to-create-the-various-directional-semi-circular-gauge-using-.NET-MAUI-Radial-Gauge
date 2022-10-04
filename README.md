@@ -1,92 +1,52 @@
-# How-to-create-the-various-directional-semi-circular-gauge-using-the-.NET-MAUI-Radial-Gauge
-This article describes how to create the various directional semi-circular gauge using the [Syncfusion .NET MAUI Radial Gauge](https://www.syncfusion.com/maui-controls/maui-radial-gauge) control.
+# How to create the various directional semi-circular gauge using .NET MAUI Radial Gauge
 
-You can create the semi-circular gauge by varying the [StartAngle](https://help.syncfusion.com/cr/maui/Syncfusion.Maui.Gauges.RadialAxis.html#Syncfusion_Maui_Gauges_RadialAxis_StartAngle) and [EndAngle](https://help.syncfusion.com/cr/maui/Syncfusion.Maui.Gauges.RadialAxis.html#Syncfusion_Maui_Gauges_RadialAxis_EndAngle) property of [RadialAxis](https://help.syncfusion.com/cr/maui/Syncfusion.Maui.Gauges.RadialAxis.html).
+This article contains sample for how to create the various directional semi-circular gauge using the [Syncfusion .NET MAUI Radial Gauge](https://help.syncfusion.com/maui/radial-gauge/getting-started) control.
 
-Create the [SfRadialGauge](https://help.syncfusion.com/cr/maui/Syncfusion.Maui.Gauges.SfRadialGauge.html) control by referring to this getting started [link](https://help.syncfusion.com/maui/radialgauge/getting-started#creating-an-application-using-the-net-maui-radial-gauge) and add an axis into it.
+## Syncfusion controls
 
-**East directional gauge:** Set the start angle property value as 270 and the end angle property value as 90 to show the east direction semi-circular gauge.
+This project used the following Syncfusion control(s):
+* [SfRadialGauge](https://www.syncfusion.com/maui-controls/maui-radial-gauge)
 
-[XAML]
-```
-<gauge:SfRadialGauge>
-    <gauge:SfRadialGauge.Axes>
-        <gauge:RadialAxis StartAngle="270"
-                          EndAngle="90"
-                          Interval="10">
-        </gauge:RadialAxis>
-    </gauge:SfRadialGauge.Axes>
-</gauge:SfRadialGauge>
-```
+## Supported platforms
 
-[Output]
+.NET Multi-platform App UI (.NET MAUI) apps can be written for the following platforms:
 
-![](EastDirectionalOutput.png)
+* Android 5.0 (API 21) or higher.
+* iOS 10 or higher.
+* macOS 10.13 or higher, using Mac Catalyst.
+* Windows 11 and Windows 10 version 1809 or higher, using [Windows UI Library (WinUI) 3](https://learn.microsoft.com/en-us/windows/apps/winui/winui3/).
 
-**West directional gauge:** Set the start angle property value as 90, end angle property value as 270, and IsInversed property value as true to show the west directional semi-circular gauge.
+## Requirements to run the sample
 
-[XAML]
-```
-<gauge:SfRadialGauge>
-    <gauge:SfRadialGauge.Axes>
-        <gauge:RadialAxis StartAngle="90"
-                          EndAngle="270"
-                          Interval="10">
-        </gauge:RadialAxis>
-    </gauge:SfRadialGauge.Axes>
-</gauge:SfRadialGauge>
-```
+* [Visual Studio 2022 Preview](https://learn.microsoft.com/en-us/visualstudio/releases/2022/release-notes-preview) version 17.3.4 or higher (.NET MAUI version 6.0.486) or [Visual Studio 2022 for Mac 17.4 Preview](https://visualstudio.microsoft.com/vs/mac/preview/).
+* .NET 6.0
 
-[Output]
+Refer to the following link for more details: [System Requirements](https://help.syncfusion.com/maui/system-requirements)
 
-![](WestDirectionalOutput.png)
+## How to run the sample
 
-**North directional gauge:** Set the start angle property value as 180 and the end angle property value as 0 to show the north directional semi-circular gauge.
+1. Clone the sample and open it in Visual Studio 2022 Preview.
 
-[XAML]
-```
-<gauge:SfRadialGauge>
-    <gauge:SfRadialGauge.Axes>
-        <gauge:RadialAxis StartAngle="180"
-                          EndAngle="0"
-                          Interval="10">
-        </gauge:RadialAxis>
-    </gauge:SfRadialGauge.Axes>
-</gauge:SfRadialGauge>
-```
+   *Note: If you download the sample using the "Download ZIP" option, right-click it, select Properties, and then select Unblock.*
 
-[Output]
+2. Register your license key in the App.cs file as demonstrated in the following code.
 
-![](NorthDirectionalOutput.png)
+		public App()
+		{
+			//Register Syncfusion license
+			Syncfusion.Licensing.SyncfusionLicenseProvider.RegisterLicense("YOUR LICENSE KEY");
+		
+			InitializeComponent();
+		
+			MainPage = new MainPage();
+		}
+		
+	Refer to this [link](https://help.syncfusion.com/maui/licensing/overview) for more details.
+	
+3. Clean and build the application.
 
-**South directional gauge:** Set the start angle property value as 0, end angle property value as 180, and IsInversed property value as true to show the south directional semi-circular gauge.
+4. Run the application.
 
-[XAML]
-```
-<gauge:SfRadialGauge>
-    <gauge:SfRadialGauge.Axes>
-        <gauge:RadialAxis StartAngle="0"
-                          EndAngle="180"
-                          Interval="10">
-        </gauge:RadialAxis>
-    </gauge:SfRadialGauge.Axes>
-</gauge:SfRadialGauge>
-```
+## License
 
-[Output]
-
-![](SouthDirectionalOutput.png)
-
-## See also
-
-[How to create an application using the .NET MAUI Radial Gauge?](https://help.syncfusion.com/maui/radialgauge/getting-started#creating-an-application-using-the-net-maui-radial-gauge)
-
-[How to customize scale?](https://help.syncfusion.com/maui/radialgauge/axes#custom-scale-range)
-
-[How to customize Axis?](https://help.syncfusion.com/maui/radialgauge/axes#axis-customization)
-
-[How to customize Axis Angle?](http://helpstaging.syncfusion.com:14038/maui/radial-gauge/axes#angle-customization)
-
-[How to customize Axis Label?](https://help.syncfusion.com/maui/radialgauge/axes?cs-save-lang=1&cs-lang=csharp#axis-label-customization)
-
-[How to customize Axis Label using Label Created Event?](https://help.syncfusion.com/maui/radialgauge/axes?cs-save-lang=1&cs-lang=csharp#labelcreated)
+Syncfusion has no liability for any damage or consequence that may arise by using or viewing the samples. The samples are for demonstrative purposes, and if you choose to use or access the samples, you agree to not hold Syncfusion liable, in any form, for any damage that is related to use, for accessing, or viewing the samples. By accessing, viewing, or seeing the samples, you acknowledge and agree Syncfusion’s samples will not allow you seek injunctive relief in any form for any claim related to the sample. If you do not agree to this, do not view, access, utilize, or otherwise do anything with Syncfusion’s samples.
